@@ -1,10 +1,14 @@
 i = int(input())
 
-if i == 0:
-    print(1)
-else:
-    f = 1
-    for k in range(1, i + 1):
-        f = f * i
-    print(f)
+def factorial(x):
+  res = 1
 
+  if x == 0:
+    return 1
+
+  for k in range(1, x + 1):
+    res = res * k
+  
+  return res
+
+print(factorial(i))
